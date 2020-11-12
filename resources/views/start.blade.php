@@ -26,30 +26,29 @@
     </nav>
 
     <div class="container-fluid">
-        <h1>Registriere oder logge dich ein</h1>
-        <div class="row">
+        <h1 class="startheadline">Registriere oder logge dich ein</h1>
+        <div class="row startrow">
             <div class="col-sm-2"></div>
             <div class="col-sm-1"><i class="fas fa-user"></i></div>
-            <div class="col-sm-3"><a><button type="button" class="btn btn-primary">Registrieren</button></a></div>
+            <div class="col-sm-3"><a href="{{ URL::route('register') }}"><button type="button" class="btn btn-primary startbutton">Registrieren</button></a></div>
             <div class="col-sm-1"><i class="fas fa-sign-in-alt"></i></div>
-            <div class="col-sm-3"><a><button type="button" class="btn btn-primary">Login</button></a></div>
+            <div class="col-sm-3"><a href="{{ URL::route('login') }}"><button type="button" class="btn btn-primary startbutton">Login</button></a></div>
             <div class="col-sm-2"></div>
         </div>
     </div>
 
 <footer>
     <ul class="nav nav-pills">
-    <li class="nav-item">
-        <p>Du hast eine Frage?</p>
-        <a class="nav-link active" href="#">Jetzt kontaktieren!</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Impressum</a>
-    </li>
-    <li class="nav-item">
-        <a class="nav-link" href="#">Datenschutz</a>
-    </li>
-
+        <li class="nav-item">
+            <p>Du hast eine Frage?</p>
+            <a class="nav-link active" href="#">Jetzt kontaktieren!</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Impressum</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Datenschutz</a>
+        </li>
     </ul>
 </footer>
 </body>

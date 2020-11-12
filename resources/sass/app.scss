@@ -10,6 +10,7 @@
 $primary-color: #006FFF !important;
 $dark-highlight: #343a40 !important;
 $background-color: #212121;
+$baseheadline-size: 50px;
 
 body{
     font-family: 'Montserrat' !important;
@@ -23,7 +24,7 @@ body{
     background: $background-color;
     text-align: center;
     padding-top: 100px;
-    height: 90vh;
+    min-height: 90vh;
 }
 
 h1{
@@ -36,14 +37,19 @@ i{
     font-size: 60px;
 }
 
-button{
+.startbutton{
     font-size: 40px !important;
     width: 100%;
 }
 
+.startrow{
+    align-items: center;
+    margin-top: 200px !important;
+}
+
 .row{
     align-items: center;
-    margin-top: 200px;
+    margin-top: 30px;
 }
 
 .nav{
@@ -61,4 +67,41 @@ button{
     }
 }
 
+.form-control{
+    color:white !important;
+}
 
+.card{
+    border: none !important;
+}
+
+.card-header{
+    background: $background-color !important;
+    color: $primary-color;
+    font-size: $baseheadline-size !important;
+    border: none;
+}
+
+.card-body{
+    color: white !important;
+    background: $background-color !important;
+}
+
+.form-control{
+    background: $dark-highlight;
+    border: none;
+}
+
+.btn-primary{
+    font-size: 20px;
+    background: $primary-color;
+}
+
+footer{
+    margin-bottom: 0px !important;
+    position: relative !important;
+}
+
+.startheadline{
+    margin: 0 auto;
+}
