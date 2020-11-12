@@ -1,0 +1,50 @@
+body {
+  font-family: "Montserrat" !important;
+}
+
+.bg-dark {
+  background: #343a40 !important;
+}
+
+.container-fluid {
+  background: #212121;
+  text-align: center;
+  padding-top: 100px;
+  height: 90vh;
+}
+
+h1 {
+  color: #006FFF !important;
+  font-size: 60px !important;
+}
+
+i {
+  color: #006FFF !important;
+  font-size: 60px;
+}
+
+button {
+  font-size: 40px !important;
+  width: 100%;
+}
+
+.row {
+  align-items: center;
+  margin-top: 200px;
+}
+
+.nav {
+  background: #343a40 !important;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.nav p {
+  color: white;
+}
+
+.nav li {
+  margin-left: 2%;
+  text-align: center;
+}
+

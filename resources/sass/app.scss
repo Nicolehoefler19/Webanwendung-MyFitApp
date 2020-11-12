@@ -1,0 +1,64 @@
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+
+$primary-color: #006FFF !important;
+$dark-highlight: #343a40 !important;
+$background-color: #212121;
+
+body{
+    font-family: 'Montserrat' !important;
+}
+
+.bg-dark{
+    background: $dark-highlight;
+}
+
+.container-fluid{
+    background: $background-color;
+    text-align: center;
+    padding-top: 100px;
+    height: 90vh;
+}
+
+h1{
+    color: $primary-color;
+    font-size: 60px !important;
+}
+
+i{
+    color: $primary-color;
+    font-size: 60px;
+}
+
+button{
+    font-size: 40px !important;
+    width: 100%;
+}
+
+.row{
+    align-items: center;
+    margin-top: 200px;
+}
+
+.nav{
+    background: $dark-highlight;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    p {
+        color: rgb(255, 255, 255);
+    }
+
+    li {
+        margin-left: 2%;
+        text-align: center;
+    }
+}
+
+
