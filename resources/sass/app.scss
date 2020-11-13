@@ -1,5 +1,6 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 // Variables
 @import 'variables';
@@ -30,6 +31,21 @@ body{
 h1{
     color: $primary-color;
     font-size: 60px !important;
+}
+
+h2{
+    font-family: 'Montserrat';
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.subheadlines{
+    padding-top: 40%;
+    color: white !important;
+
+    &:hover{
+        color: white !important;
+    }
 }
 
 i{
@@ -103,5 +119,12 @@ footer{
 }
 
 .startheadline{
+    margin: 0 auto;
+}
+
+.bild-quader{
+    height: 400px;
+    width: 400px;
+    background: #006FFF;
     margin: 0 auto;
 }
