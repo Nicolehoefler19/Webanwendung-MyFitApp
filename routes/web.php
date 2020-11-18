@@ -44,5 +44,11 @@ Route::get('nutrition', function () {
     return view('nutrition');
 });
 
+Route::get('search', function () {
+    return view('search');
+});
+
+Route::get('/search/action', [App\Http\Controllers\UsersearchController::class, 'action'])->name('search.action');
+
 Auth::routes();
 
