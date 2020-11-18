@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Montserrat);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Nunito);@import url(https://fonts.googleapis.com/css?family=Montserrat);@import url(https://fonts.googleapis.com/css2?family=Just+Another+Hand&display=swap);@charset "UTF-8";
 
 /*!
  * Bootstrap v4.5.3 (https://getbootstrap.com/)
@@ -10904,7 +10904,8 @@ a.text-dark:focus {
 }
 
 body {
-  font-family: "Montserrat" !important;
+  font-family: "Montserrat";
+  color: white !important;
 }
 
 .bg-dark {
@@ -10918,8 +10919,10 @@ body {
 .container-xl {
   background: #212121;
   text-align: center;
-  padding-top: 100px;
   min-height: 90vh;
+  padding: 0;
+  margin-top: 0;
+  overflow: hidden !important;
 }
 
 h1 {
@@ -10933,13 +10936,19 @@ h2 {
   font-size: 40px;
 }
 
+.category {
+  color: #006FFF !important;
+  margin: 60px;
+}
+
 .subheadlines {
   padding-top: 40%;
   color: white !important;
 }
 
 .subheadlines:hover {
-  color: white !important;
+  -webkit-text-decoration: underline white !important;
+          text-decoration: underline white !important;
 }
 
 i {
@@ -11021,5 +11030,164 @@ footer {
   width: 400px;
   background: #006FFF;
   margin: 0 auto;
+}
+
+.themeheadline {
+  font-family: "Just Another Hand", cursive !important;
+  color: white !important;
+  font-size: 100px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+.bannerpic {
+  background-image: url(/images/Fitness_460099_3840x2400.jpg?0baac54d032ccf2b7e2213970041282e);
+  margin-top: 0;
+  position: relative;
+  height: 600px;
+  background-size: cover;
+}
+
+.trainingcontainer {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
+
+.workout-sec {
+  height: 400px;
+  width: 100%;
+  outline: none !important;
+  border: none;
+  overflow: hidden;
+  position: relative;
+  background: none;
+}
+
+.workout-sec p,
+.workout-sec h4 {
+  color: white;
+  text-align: left;
+  margin-left: 10%;
+}
+
+.workout-sec p {
+  font-size: 30px;
+}
+
+.workout-sec h4 {
+  padding-top: 30px;
+  font-size: 60px;
+}
+
+.flipdowncontent {
+  margin-top: 0 !important;
+}
+
+#arme-kasten,
+#brust-kasten,
+#ruecken-kasten,
+#ausdauer-kasten {
+  background: #343a40 !important;
+  width: 100%;
+  margin-left: 0;
+  height: auto;
+  display: none;
+  padding-bottom: 20px;
+  padding-top: 40px;
+}
+
+iframe {
+  margin-top: 20px;
+}
+
+.remember-row {
+  width: 80%;
+  margin-left: 10%;
+}
+
+.remember-tool {
+  width: 80% !important;
+}
+
+.remember-tool p {
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: inline;
+}
+
+.far .fa-star {
+  cursor: pointer !important;
+  display: inline;
+}
+
+.merkliste-button {
+  border: none !important;
+  background: none !important;
+  outline: none !important;
+}
+
+h5 {
+  color: #006FFF !important;
+  margin: 40px;
+  font-size: 30px;
+}
+
+#arme-background {
+  background-image: url(/images/back-fitness-gym-power-pose.jpg?6919bc354c770bec0ee166e6fb19fa38);
+  background-size: cover;
+}
+
+#ausdauer-background {
+  background-image: url(/images/fitness.jpg?0b2371ba92755640be6f4ec69b84f496);
+  background-size: cover;
+}
+
+#brust-background {
+  background-image: url(/images/987915.jpg?9191694cea1d0cb1196be81a06eb9b16);
+  background-size: cover;
+}
+
+#back-background {
+  background-image: url(/images/6a1c93ed7c2ba9db9e7859c14ea96762.jpg?8303baf4bf7477f5fd82721a247211f8);
+  background-size: cover;
+}
+
+.profilpicture {
+  height: 300px;
+}
+
+.informationlist {
+  text-align: left !important;
+  color: white;
+}
+
+.informationlist li {
+  margin-top: 10px;
+  list-style: none;
+}
+
+#erfolge,
+.verwalten {
+  color: #006FFF !important;
+}
+
+.merkliste-buttons,
+.upload-button {
+  background: #006FFF !important;
+  color: white;
+  padding: 10px;
+  outline: none !important;
+  border: none;
+}
+
+.editgroup {
+  color: white !important;
+  font-size: 20px !important;
+}
+
+.profilform {
+  margin-left: 20px !important;
 }
 

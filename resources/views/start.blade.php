@@ -22,7 +22,7 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand/logo -->
-        <a class="navbar-brand" href=""><img src="./images/Logo.png" alt="Logo"></a>
+    <a class="navbar-brand" href=""><img src="{{ asset('img/Logo.png') }}" alt="Logo"></a>
     </nav>
 
     <div class="container-fluid">

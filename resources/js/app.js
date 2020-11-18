@@ -30,3 +30,87 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 const app = new Vue({
     el: '#app',
 });
+
+$(document).ready(function(){
+    $("#arme-button").click(function(){
+        $("#arme-kasten").fadeToggle();
+        $('#arme-cross').toggleClass('fa-times');
+    })
+});
+
+$(document).ready(function(){
+    $("#ausdauer-button").click(function(){
+        $("#ausdauer-kasten").fadeToggle();
+        $('#ausdauer-cross').toggleClass('fa-times');
+    })
+});
+
+$(document).ready(function(){
+    $("#ruecken-button").click(function(){
+        $("#ruecken-kasten").fadeToggle();
+        $('#ruecken-cross').toggleClass('fa-times');
+    })
+});
+
+$(document).ready(function(){
+    $("#brust-button").click(function(){
+        $("#brust-kasten").fadeToggle();
+        $('#brust-cross').toggleClass('fa-times');
+    })
+});
+
+$("#remember_video1").on( "click", function(){
+    $("#star-video1").toggleClass( "fas" ); 
+});
+
+$("#remember_video2").on( "click", function(){
+    $("#star-video2").toggleClass( "fas" ); 
+});
+
+$("#remember_video3").on( "click", function(){
+    $("#star-video3").toggleClass( "fas" ); 
+});
+
+$("#remember_video4").on( "click", function(){
+    $("#star-video4").toggleClass( "fas" ); 
+});
+
+$("#remember_video5").on( "click", function(){
+    $("#star-video5").toggleClass( "fas" ); 
+});
+
+$("#remember_video6").on( "click", function(){
+    $("#star-video6").toggleClass( "fas" ); 
+});
+
+$("#remember_video7").on( "click", function(){
+    $("#star-video7").toggleClass( "fas" ); 
+});
+
+$("#remember_video8").on( "click", function(){
+    $("#star-video8").toggleClass( "fas" ); 
+});
+
+$("#remember_video3").on( "click", function(){
+    $("#star-video3").toggleClass( "fas" ); 
+});
+
+var merkliste_videos_array = new Array();
+var star_array = [star_remember_video1, star_remember_video2, star_remember_video3, star_remember_video4, star_remember_video5, star_remember_video6, star_remember_video7, star_remember_video8];
+var videos_array = document.querySelectorAll("iframes");
+
+var star_remember_video1 = document.getElementById("star-video1");
+var star_remember_video2 = document.getElementById("star-video2");
+var star_remember_video3 = document.getElementById("star-video3");
+var star_remember_video4 = document.getElementById("star-video4");
+var star_remember_video5 = document.getElementById("star-video5");
+var star_remember_video6 = document.getElementById("star-video6");
+var star_remember_video7 = document.getElementById("star-video7");
+var star_remember_video8 = document.getElementById("star-video8");
+
+var matchKeys = {};
+
+var i;
+for (i=0; i < star_array.length; i++) {
+    matchKeys[star_array[i]] = videos_array[i];
+}

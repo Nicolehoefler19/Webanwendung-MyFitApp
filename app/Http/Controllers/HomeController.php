@@ -25,4 +25,17 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function training(){
+        return view('training');
+    }
+
+    public function nutrition(){
+        return view('nutrition');
+    }
+
+    public function profil(){
+        return view('profil');
+    }
+
 }
