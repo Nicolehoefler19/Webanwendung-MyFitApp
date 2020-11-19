@@ -10942,8 +10942,8 @@ h2 {
 }
 
 .subheadlines {
-  padding-top: 40%;
   color: white !important;
+  padding-top: 90px;
 }
 
 .subheadlines:hover {
@@ -11026,10 +11026,11 @@ footer {
 }
 
 .bild-quader {
-  height: 400px;
+  height: 200px;
   width: 400px;
   background: #006FFF;
-  margin: 0 auto;
+  margin: 10px auto;
+  cursor: pointer;
 }
 
 .themeheadline {

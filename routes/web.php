@@ -20,6 +20,22 @@ Route::get('/', function () {
     return view('start');
 });
 
+Route::get('/arme', function () {
+    return view('arme');
+});
+
+Route::get('/ausdauer', function () {
+    return view('ausdauer');
+});
+
+Route::get('/brust', function () {
+    return view('brust');
+});
+
+Route::get('/ruecken', function () {
+    return view('ruecken');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/training', [App\Http\Controllers\HomeController::class, 'training'])->name('training');

@@ -115,5 +115,42 @@ $(document).ready(function() {
     $('.videocontainer4').toggleClass(storageVideoClass);
 });
 
-
+$(document).ready(function() {
+    $("#getArmContent").click(function() {
+        $.ajax({
+            type: 'GET', 
+            url : "/arme", 
+            success : function (data) {
+                $(".includeContainer").html(data);
+            }
+        });
+    });
+    $("#getAusdauerContent").click(function() {
+        $.ajax({
+            type: 'GET', 
+            url : "/ausdauer", 
+            success : function (data) {
+                $(".includeContainer").html(data);
+            }
+        });
+    });
+    $("#getBrustContent").click(function() {
+        $.ajax({
+            type: 'GET', 
+            url : "/brust", 
+            success : function (data) {
+                $(".includeContainer").html(data);
+            }
+        });
+    });
+    $("#getRueckenContent").click(function() {
+        $.ajax({
+            type: 'GET', 
+            url : "/ruecken", 
+            success : function (data) {
+                $(".includeContainer").html(data);
+            }
+        });
+    });
+}); 
 

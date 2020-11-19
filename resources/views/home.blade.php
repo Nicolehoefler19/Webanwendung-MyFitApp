@@ -15,11 +15,19 @@
                     @endif
                     <div class="row">
                         <div class="col">
-                            <a href="{{ URL::route('training') }}"><div class="bild-quader"><h2 class="subheadlines">Training</h2></div></a>
+                            <a id="getArmContent"><div class="bild-quader"><h2 class="subheadlines">Arme</h2></div></a>
                         </div>
                         <div class="col">
-                            <a href="{{ URL::route('nutrition') }}"><div class="bild-quader"><h2 class="subheadlines">Nutrition</h2></div></a>
+                            <a id="getAusdauerContent"><div class="bild-quader"><h2 class="subheadlines">Ausdauer</h2></div></a>
                         </div>
+                        <div class="col">
+                            <a id="getBrustContent"><div class="bild-quader"><h2 class="subheadlines">Brust</h2></div></a>
+                        </div>
+                        <div class="col">
+                            <a id="getRueckenContent"><div class="bild-quader"><h2 class="subheadlines">Rücken</h2></div></a>
+                        </div>
+                    </div>
+                    <div class="includeContainer">
                     </div>
                 </div>
             </div>

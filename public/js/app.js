@@ -49820,6 +49820,44 @@ $(document).ready(function () {
   $('.videocontainer3').toggleClass(storageVideoClass);
   $('.videocontainer4').toggleClass(storageVideoClass);
 });
+$(document).ready(function () {
+  $("#getArmContent").click(function () {
+    $.ajax({
+      type: 'GET',
+      url: "/arme",
+      success: function success(data) {
+        $(".includeContainer").html(data);
+      }
+    });
+  });
+  $("#getAusdauerContent").click(function () {
+    $.ajax({
+      type: 'GET',
+      url: "/ausdauer",
+      success: function success(data) {
+        $(".includeContainer").html(data);
+      }
+    });
+  });
+  $("#getBrustContent").click(function () {
+    $.ajax({
+      type: 'GET',
+      url: "/brust",
+      success: function success(data) {
+        $(".includeContainer").html(data);
+      }
+    });
+  });
+  $("#getRueckenContent").click(function () {
+    $.ajax({
+      type: 'GET',
+      url: "/ruecken",
+      success: function success(data) {
+        $(".includeContainer").html(data);
+      }
+    });
+  });
+});
 
 /***/ }),
 

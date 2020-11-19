@@ -73,15 +73,11 @@
     <div class="row justify-content-center">
 
     </div> --}}
+    <div class="row justify-content-center"><h5>Trainingsmerkliste</h5></div>
     <div class="row justify-content-center">
         <div class="col-md-3">
             <button class="merkliste-buttons">
                 Meine Video-Merkliste
-            </button>
-        </div>
-        <div class="col-md-3">
-            <button class="merkliste-buttons">
-                Meine Rezepte-Merkliste
             </button>
         </div>
     </div>
