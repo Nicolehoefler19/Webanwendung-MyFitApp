@@ -62,6 +62,9 @@
                             </form>
                         </div>
                     </li>
+                    <li class="nav-item">
+                        <img id="profilpicture-nav" src="">
+                    </li>
                 @endguest
             </ul>        
         </nav> 
@@ -87,4 +90,25 @@
             </ul>
         </footer>
 </body>
+<script type="text/javascript">
+        //search function
+
+$(document).ready(function(){
+    $('#search').on('keyup', function(){
+        $value = $(this).val();
+        $.ajax({
+            type: 'get',
+            url: '{{ URL::to('search/search') }}',
+            data: '{'search':$value}',
+            success:function(data){
+                $('li').html(data);
+            }
+        });
+    });
+});
+
+</script>
+<script type="text/javascript">
+    $.ajaxSetup({ headers: { 'csrftoken' : '{{ csrf_token() }}' } });
+</script>
 </html>

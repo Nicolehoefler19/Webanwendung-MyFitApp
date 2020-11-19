@@ -40,15 +40,17 @@ Route::get('/deletecountry', [App\Http\Controllers\ProfilupdateController::class
 
 Route::get('/delete', [App\Http\Controllers\UploadController::class, 'deleteImage']);
 
-Route::get('nutrition', function () {
-    return view('nutrition');
-});
+Route::get('/search', [App\Http\Controllers\UsersearchController::class, 'search']);
 
-Route::get('search', function () {
-    return view('search');
-});
+Route::get('/store', [App\Http\Controllers\BookmarkController::class, 'collectVideos']);
 
-Route::get('/search/action', [App\Http\Controllers\UsersearchController::class, 'action'])->name('search.action');
+Route::get('/insertvid1', [App\Http\Controllers\BookmarkController::class, 'insertv1']);
+
+Route::get('/insertvid2', [App\Http\Controllers\BookmarkController::class, 'insertv2']);
+
+Route::get('/insertvid3', [App\Http\Controllers\BookmarkController::class, 'insertv3']);
+
+Route::get('/insertvid4', [App\Http\Controllers\BookmarkController::class, 'insertv4']);
 
 Auth::routes();
 

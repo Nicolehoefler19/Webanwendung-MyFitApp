@@ -28,20 +28,12 @@
                 <iframe width="80%" height="600px" src="https://www.youtube.com/embed/j64BBgBGNIU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="remember-row justify-content-center">
                     <div class="row remember-tool">
-                        <button id="remember_video1" class="merkliste-button">
-                            <i id="star-video1" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
-                    </div>
-                </div>
-                <h5>Armworkout-Video Nr. 2</h5>
-                <iframe width="80%" height="600px" src="https://www.youtube.com/embed/UyTR2EjTAXU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="remember-row justify-content-center">
-                    <div class="row remember-tool">
-                        <button id="remember_video2" class="merkliste-button">
-                            <i id="star-video2" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
+                        <a href="{{ URL::to('/insertvid1') }}">
+                            <button id="remember_video1" class="merkliste-button">
+                                <i id="star-video1" class="far fa-star"></i>
+                                <p>Video auf die Merkliste setzen</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -67,20 +59,12 @@
                 <iframe width="80%" height="600px" src="https://www.youtube.com/embed/1skBf6h2ksI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="remember-row justify-content-center">
                     <div class="row remember-tool">
+                    <a href="{{ URL::to('/insertvid2') }}">
                         <button id="remember_video3" class="merkliste-button">
-                            <i id="star-video3" class="far fa-star"></i>
+                            <i id="star-video2" class="far fa-star"></i>
                             <p>Video auf die Merkliste setzen</p>
                         </button>
-                    </div>
-                </div>
-                <h5>Ausdauer-Video Nr. 2</h5>
-                <iframe width="80%" height="600px" src="https://www.youtube.com/embed/gFeEUq2624Q" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="remember-row justify-content-center">
-                    <div class="row remember-tool">
-                        <button id="remember_video4" class="merkliste-button">
-                            <i id="star-video4" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
+                    </a>
                     </div>
                 </div>
             </div>
@@ -107,20 +91,12 @@
                 <iframe width="80%" height="600px" src="https://www.youtube.com/embed/qwx1VV9vV1A" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="remember-row justify-content-center">
                     <div class="row remember-tool">
-                        <button id="remember_video5" class="merkliste-button">
-                            <i id="star-video5" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
-                    </div>
-                </div>
-                <h5>Brustworkout-Video Nr. 2</h5>
-                <iframe width="80%" height="600px" src="https://www.youtube.com/embed/rxEMKXW2Wqs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="remember-row justify-content-center">
-                    <div class="row remember-tool">
-                        <button  id="remember_video6" class="merkliste-button">
-                            <i id="star-video6" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
+                        <a href="{{ URL::to('/insertvid3') }}">
+                            <button id="remember_video5" class="merkliste-button">
+                                <i id="star-video3" class="far fa-star"></i>
+                                <p>Video auf die Merkliste setzen</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -147,20 +123,12 @@
                 <iframe width="80%" height="600px" src="https://www.youtube.com/embed/b2sdVtXNecs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 <div class="remember-row justify-content-center">
                     <div class="row remember-tool">
-                        <button id="remember_video7" class="merkliste-button">
-                            <i id="star-video7" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
-                    </div>
-                </div>
-                <h5>Rückenworkout-Video Nr. 2</h5>
-                <iframe width="80%" height="600px" src="https://www.youtube.com/embed/COwGXr1RIlI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                <div class="remember-row justify-content-center">
-                    <div class="row remember-tool">
-                        <button id="remember_video8" class="merkliste-button">
-                            <i id="star-video8" class="far fa-star"></i>
-                            <p>Video auf die Merkliste setzen</p>
-                        </button>
+                        <a href="{{ URL::to('/insertvid4') }}">
+                            <button id="remember_video7" class="merkliste-button">
+                                <i id="star-video4" class="far fa-star"></i>
+                                <p>Video auf die Merkliste setzen</p>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

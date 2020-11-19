@@ -85,6 +85,18 @@
             </button>
         </div>
     </div>
+    <div class="videocontainer">
+        <iframe width="80%" height="600px" src="https://www.youtube.com/embed/{{ Auth::user()->vid1 }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="videocontainer2">
+        <iframe width="80%" height="600px" src="https://www.youtube.com/embed/{{ Auth::user()->vid2 }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="videocontainer3">
+        <iframe width="80%" height="600px" src="https://www.youtube.com/embed/{{ Auth::user()->vid3 }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    <div class="videocontainer4">
+        <iframe width="80%" height="600px" src="https://www.youtube.com/embed/{{ Auth::user()->vid4 }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 
 
     

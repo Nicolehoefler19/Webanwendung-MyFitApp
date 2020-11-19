@@ -61,58 +61,59 @@ $(document).ready(function(){
     })
 });
 
-$("#remember_video1").on( "click", function(){
-    $("#star-video1").toggleClass( "fas" ); 
-});
 
-$("#remember_video2").on( "click", function(){
-    $("#star-video2").toggleClass( "fas" ); 
+$("#remember_video1").on( "click", function(){
+    $("#star-video1").addClass( "fas" );
+    localStorage['starclass1'] = 'fas';
+    $(".videocontainer").toggleClass("showit");
+    localStorage['videoclass'] = 'showit' ;
+
 });
 
 $("#remember_video3").on( "click", function(){
-    $("#star-video3").toggleClass( "fas" ); 
-});
+    $("#star-video2").addClass( "fas" );
+    localStorage['starclass2'] = 'fas';
+    $(".videocontainer2").toggleClass("showit2");
+    localStorage['videoclass2'] = 'showit2' ;
 
-$("#remember_video4").on( "click", function(){
-    $("#star-video4").toggleClass( "fas" ); 
 });
 
 $("#remember_video5").on( "click", function(){
-    $("#star-video5").toggleClass( "fas" ); 
-});
-
-$("#remember_video6").on( "click", function(){
-    $("#star-video6").toggleClass( "fas" ); 
+    $("#star-video3").addClass( "fas" ); 
+    localStorage['starclass3'] = 'fas';
+    $(".videocontainer3").toggleClass("showit3");
+    localStorage['videoclass3'] = 'showit3' ;
 });
 
 $("#remember_video7").on( "click", function(){
-    $("#star-video7").toggleClass( "fas" ); 
+    $("#star-video4").addClass( "fas" ); 
+    localStorage['starclass4'] = 'fas';
+    $(".videocontainer4").toggleClass("showit4");
+    localStorage['videoclass4'] = 'showit4' ;
 });
 
-$("#remember_video8").on( "click", function(){
-    $("#star-video8").toggleClass( "fas" ); 
+
+$(document).ready(function() {
+    storageStarClass1 = localStorage['starclass1'];
+    storageStarClass2 = localStorage['starclass2'];
+    storageStarClass3 = localStorage['starclass3'];
+    storageStarClass4 = localStorage['starclass4'];
+
+    $('#star-video1').addClass(storageStarClass1);
+    $('#star-video2').addClass(storageStarClass2);
+    $('#star-video3').addClass(storageStarClass3);
+    $('#star-video4').addClass(storageStarClass4);
+
+    storageVideoClass = localStorage['videoclass'];
+    storageVideoClass2 = localStorage['videoclass2'];
+    storageVideoClass3 = localStorage['videoclass3'];
+    storageVideoClass4 = localStorage['videoclass4'];
+
+    $('.videocontainer').toggleClass(storageVideoClass);
+    $('.videocontainer2').toggleClass(storageVideoClass);
+    $('.videocontainer3').toggleClass(storageVideoClass);
+    $('.videocontainer4').toggleClass(storageVideoClass);
 });
 
-$("#remember_video3").on( "click", function(){
-    $("#star-video3").toggleClass( "fas" ); 
-});
 
-var merkliste_videos_array = new Array();
-var star_array = [star_remember_video1, star_remember_video2, star_remember_video3, star_remember_video4, star_remember_video5, star_remember_video6, star_remember_video7, star_remember_video8];
-var videos_array = document.querySelectorAll("iframes");
 
-var star_remember_video1 = document.getElementById("star-video1");
-var star_remember_video2 = document.getElementById("star-video2");
-var star_remember_video3 = document.getElementById("star-video3");
-var star_remember_video4 = document.getElementById("star-video4");
-var star_remember_video5 = document.getElementById("star-video5");
-var star_remember_video6 = document.getElementById("star-video6");
-var star_remember_video7 = document.getElementById("star-video7");
-var star_remember_video8 = document.getElementById("star-video8");
-
-var matchKeys = {};
-
-var i;
-for (i=0; i < star_array.length; i++) {
-    matchKeys[star_array[i]] = videos_array[i];
-}
