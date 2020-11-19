@@ -11205,3 +11205,9 @@ h5 {
   display: block;
 }
 
+#profilpicture-nav {
+  width: 50px !important;
+  height: 50px !important;
+  border-radius: 80px;
+}
+
