@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Artisan;
 use App\Http\Controllers\UploadController;
 
 /*
@@ -67,6 +68,16 @@ Route::get('/insertvid2', [App\Http\Controllers\BookmarkController::class, 'inse
 Route::get('/insertvid3', [App\Http\Controllers\BookmarkController::class, 'insertv3']);
 
 Route::get('/insertvid4', [App\Http\Controllers\BookmarkController::class, 'insertv4']);
+
+Route::get('/clear-cache-all', function() {
+
+    Artisan::call('cache:clear');
+
+  
+
+    dd("Cache Clear All");
+
+});
 
 Auth::routes();
 

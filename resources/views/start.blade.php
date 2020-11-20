@@ -52,4 +52,7 @@
     </ul>
 </footer>
 </body>
+<script type="text/javascript">
+    localStorage.clear();
+</script>
 </html>

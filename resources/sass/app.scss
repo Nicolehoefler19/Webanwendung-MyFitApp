@@ -305,3 +305,29 @@ h5{
     height: 50px !important;
     border-radius: 80px;
 }
+
+.edit_forms {
+    visibility: hidden !important;
+}
+
+#profilbild_verwalten{
+    visibility: hidden !important;
+}
+
+.profilbild_verwalten_form{
+    display: none;
+}
+
+.showforms{
+    visibility: visible !important;
+}
+
+.showforms_alt{
+    display: block;
+}
+
+.bildbeschraenker{
+    width: 400px;
+    height: 400px;
+    overflow: hidden !important;
+}

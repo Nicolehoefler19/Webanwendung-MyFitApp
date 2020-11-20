@@ -154,3 +154,43 @@ $(document).ready(function() {
     });
 }); 
 
+$(document).ready(function(){
+    $(".merkliste-buttons").click(function(){
+      $(".video-merkliste").slideToggle("slow");
+    });
+  });
+
+  var birth_field = document.getElementById('birth-field');
+  var land = document.getElementById('land-field');
+  
+
+  function makeEditListjustReadable(){
+    birth_field.readOnly = true;
+    land.readOnly = true;
+  }
+
+  makeEditListjustReadable();
+
+  function editBirth(){
+    birth_field.readOnly = false;
+  }
+
+  function editLand(){
+    land.readOnly = false;
+  }
+
+  function btndisable(){
+      document.getElementById('profil_bearbeiten').disabled = 'disabled';
+  }
+
+  $(document).ready(function(){
+    $("#profil_bearbeiten").click(function(){
+       $('.edit_forms').toggleClass('showforms');
+       $('.profilbild_verwalten_form').toggleClass('showforms_alt');
+      editBirth();
+      editLand();
+      btndisable();
+    });
+  });
+
+
