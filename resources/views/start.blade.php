@@ -38,18 +38,7 @@
     </div>
 
 <footer>
-    <ul class="nav nav-pills">
-        <li class="nav-item">
-            <p>Du hast eine Frage?</p>
-            <a class="nav-link active" href="#">Jetzt kontaktieren!</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Impressum</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Datenschutz</a>
-        </li>
-    </ul>
+
 </footer>
 </body>
 <script type="text/javascript">

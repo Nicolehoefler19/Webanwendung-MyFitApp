@@ -11,13 +11,19 @@ class UploadController extends Controller
     function uploadImage(Request $request){
         $id = Auth::id();
 
-        return $request->file('photo')->storePubliclyAs('img', $id.'.jpg');
+        $request->file('photo')->storePubliclyAs('img', $id.'.jpg');
+
+        return view('actionsucess'); 
+
     }
 
     function editImage(Request $request){
         $id = Auth::id();
 
-        return $request->file('photo')->storePubliclyAs('img', $id.'.jpg');
+        $request->file('photo')->storePubliclyAs('img', $id.'.jpg');
+
+        return view('actionsucess'); 
+
     }
 
     function deleteImage(){
@@ -28,17 +34,7 @@ class UploadController extends Controller
         {
             Storage::disk('local')->delete('img', $id.'.jpg');
         }
-        else
-        {
-            echo "File does not exist";
-        }
-        
-        if(is_file($file)){
-            echo "File still exists";
-        }
 
-        else {
-            echo "sucessfully deleted";
-        }
+        return view('actionsucess'); 
     }
 }

@@ -14,11 +14,14 @@ class ProfilupdateController extends Controller
         $date = $request->input('date');
 
         DB::table('users')->where(['id' => $id])->update(['birthdate' => $date]);
+
+        return view('actionsucess'); 
     }
 
     function deleteBirthdate(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['birthdate' => NULL]);
+        return view('actionsucess'); 
     }
 
     function saveCountry(Request $request){
@@ -26,11 +29,14 @@ class ProfilupdateController extends Controller
         $country = $request->input('country');
 
         DB::table('users')->where(['id' => $id])->update(['country' => $country]);
+        return view('actionsucess'); 
     }
 
     function deleteCountry(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['country' => NULL]);
+        return view('actionsucess'); 
+
     }
 
 }

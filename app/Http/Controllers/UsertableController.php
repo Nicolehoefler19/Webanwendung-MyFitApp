@@ -14,7 +14,7 @@ class UsertableController extends Controller
 
         $users = User::all();
 
-        return View::make('allusers')->with('users', $users);
+        return View::make('usertable')->with('users', $users);
 
     }
 }

@@ -37,9 +37,13 @@ Route::get('/ruecken', function () {
     return view('ruecken');
 });
 
+Route::get('/allusers', function () {
+    return view('allusers');
+});
+
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
-Route::get('/allusers', [App\Http\Controllers\UsertableController::class, 'userTable']);
+Route::get('/usertable', [App\Http\Controllers\UsertableController::class, 'userTable']);
 
 Route::get('/training', [App\Http\Controllers\HomeController::class, 'training'])->name('training');
 

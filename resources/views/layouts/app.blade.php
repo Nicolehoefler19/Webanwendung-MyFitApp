@@ -65,7 +65,7 @@
                             <a class="dropdown-item" href="{{ route('profil') }}">
                                 Mein Profil
                             </a>
-                            <a class="dropdown-item" href="{{ route('profil') }}">
+                            <a class="dropdown-item" href="{{ URL::to('allusers') }}">
                                 Alle Trainings-Profile
                             </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
@@ -79,7 +79,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <img id="profilpicture-nav" src="{{ asset('imgs/myprofil.jpg') }}">
+                        <img id="profilpicture-nav" src="{{ asset('imgs/'.Auth::id().'.jpg') }}">
                     </li>
                 @endguest
             </ul>        
@@ -91,19 +91,7 @@
             </main>
         </div>
         <footer>
-            <ul class="nav nav-pills">
-            <li class="nav-item">
-                <p>Du hast eine Frage?</p>
-                <a class="nav-link active" href="#">Jetzt kontaktieren!</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Impressum</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Datenschutz</a>
-            </li>
-        
-            </ul>
+           
         </footer>
 </body>
 <script type="text/javascript">

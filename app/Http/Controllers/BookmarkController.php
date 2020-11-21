@@ -67,21 +67,29 @@ class BookmarkController extends Controller
     function insertv1(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['vid1' => 'j64BBgBGNIU']);
+        return view('sucessvm'); 
+
     }
 
     function insertv2(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['vid2' => '1skBf6h2ksI']);
+        return view('sucessvm'); 
+
     }
 
     function insertv3(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['vid3' => 'qwx1VV9vV1A']);
+        return view('sucessvm'); 
+
     }
 
     function insertv4(){
         $id = Auth::id();
         DB::table('users')->where(['id' => $id])->update(['vid4' => 'b2sdVtXNecs']);
+        return view('sucessvm'); 
+
     }
 
 }

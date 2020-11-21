@@ -86,7 +86,7 @@
             </button>
         </div>
     </div>
-    <div class="video-merkliste" style="display: none;">
+    <div class="video-merkliste" style="display: none">
         <div class="videocontainer">
             <iframe width="80%" height="600px" src="https://www.youtube.com/embed/{{ Auth::user()->vid1 }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>

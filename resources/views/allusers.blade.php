@@ -7,7 +7,7 @@
         <button class="btn btn-primary" id="fitness_profile">Zeige mir alle Fintess-Profile</button>
     </div>
     <div class="user-container justify-content-center">
-        @include('usertable')
+        
     </div>
 </div>
 @endsection
