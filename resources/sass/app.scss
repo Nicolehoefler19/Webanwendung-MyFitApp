@@ -331,3 +331,21 @@ h5{
     height: 400px;
     overflow: hidden !important;
 }
+
+.user-container{
+    margin-top: 20px;
+}
+
+.table{
+    color: white !important;
+
+    tr:hover{
+        color: $primary-color;
+    }
+}
+
+.table_profilbilder{
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}

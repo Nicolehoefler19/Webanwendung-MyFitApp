@@ -65,6 +65,9 @@
                             <a class="dropdown-item" href="{{ route('profil') }}">
                                 Mein Profil
                             </a>
+                            <a class="dropdown-item" href="{{ route('profil') }}">
+                                Alle Trainings-Profile
+                            </a>
                             <a class="dropdown-item" href="{{ route('logout') }}"
                                onclick="event.preventDefault();
                                              document.getElementById('logout-form').submit();">

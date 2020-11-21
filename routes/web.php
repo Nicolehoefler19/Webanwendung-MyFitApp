@@ -39,6 +39,8 @@ Route::get('/ruecken', function () {
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
+Route::get('/allusers', [App\Http\Controllers\UsertableController::class, 'userTable']);
+
 Route::get('/training', [App\Http\Controllers\HomeController::class, 'training'])->name('training');
 
 Route::get('/profil', [App\Http\Controllers\HomeController::class, 'profil'])->name('profil');
@@ -68,6 +70,19 @@ Route::get('/insertvid2', [App\Http\Controllers\BookmarkController::class, 'inse
 Route::get('/insertvid3', [App\Http\Controllers\BookmarkController::class, 'insertv3']);
 
 Route::get('/insertvid4', [App\Http\Controllers\BookmarkController::class, 'insertv4']);
+
+Route::get('/insertvid4', [App\Http\Controllers\BookmarkController::class, 'insertv4']);
+
+Route::post('/insertcom1', [App\Http\Controllers\CommentController::class, 'postCommentOne']);
+
+Route::post('/insertcom2', [App\Http\Controllers\CommentController::class, 'postCommentTwo']);
+
+Route::post('/insertcom3', [App\Http\Controllers\CommentController::class, 'postCommentThree']);
+
+Route::post('/insertcom4', [App\Http\Controllers\CommentController::class, 'postCommentFour']);
+
+Route::get('/deletecom1', [App\Http\Controllers\CommentController::class, 'deleteCommentOne']);
+
 
 Route::get('/clear-cache-all', function() {
 

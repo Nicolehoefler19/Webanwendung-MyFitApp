@@ -152,6 +152,15 @@ $(document).ready(function() {
             }
         });
     });
+    $("#fitness_profile").click(function (){
+        $.ajax({
+            type: 'GET', 
+            url : "/usertable", 
+            success : function (data) {
+                $(".user-container").html(data);
+            }
+        });
+    });
 }); 
 
 $(document).ready(function(){

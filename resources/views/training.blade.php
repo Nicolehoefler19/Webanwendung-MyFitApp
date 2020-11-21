@@ -67,6 +67,26 @@
                     </a>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="comment-block">
+                        <ul>
+                            <li>
+                                <img class="table_profilbilder" src="{{ asset('imgs/'.Auth::id().'.jpg') }}">
+                                <p>{{ Auth::user()->name }}</p>
+                            </li>
+                            <li>
+                                <p>{{ Auth::user()->commenttwo }}</p>
+                            </li>
+                            <li>
+                                <a href="{{ URL::to('/deletectwo')}}" class="edit_forms" ><i class="editgroup fas fa-trash-alt">Kommentar löschen</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="comment-form" action="insertcom2" method="POST" name="comment">
+                        <input id="comment-field" type="textfield" name="comment-input" value="Schreibe deine Meinung">
+                        <button class="btn btn-primary">Kommentar posten</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -99,6 +119,26 @@
                         </a>
                     </div>
                 </div>
+                <div class="row justify-content-center">
+                    <div class="comment-block">
+                        <ul>
+                            <li>
+                                <img class="table_profilbilder" src="{{ asset('imgs/'.Auth::id().'.jpg') }}">
+                                <p>{{ Auth::user()->name }}</p>
+                            </li>
+                            <li>
+                                <p>{{ Auth::user()->commentthree }}</p>
+                            </li>
+                            <li>
+                                <a href="{{ URL::to('/deletecthree')}}" class="edit_forms" ><i class="editgroup fas fa-trash-alt">Kommentar löschen</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="comment-form" action="insertcom3" method="POST" name="comment">
+                        <input id="comment-field" type="textfield" name="comment-input" value="Schreibe deine Meinung">
+                        <button class="btn btn-primary">Kommentar posten</button>
+                    </form>
+                </div>
             </div>
         </div>
     </div>
@@ -130,6 +170,26 @@
                             </button>
                         </a>
                     </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="comment-block">
+                        <ul>
+                            <li>
+                                <img class="table_profilbilder" src="{{ asset('imgs/'.Auth::id().'.jpg') }}">
+                                <p>{{ Auth::user()->name }}</p>
+                            </li>
+                            <li>
+                                <p>{{ Auth::user()->commentfour }}</p>
+                            </li>
+                            <li>
+                                <a href="{{ URL::to('/deletecfour')}}" class="edit_forms" ><i class="editgroup fas fa-trash-alt">Kommentar löschen</i></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <form class="comment-form" action="postCommentone" method="POST" name="comment">
+                        <input id="comment-field" type="textfield" name="comment-input" value="Schreibe deine Meinung">
+                        <button class="btn btn-primary">Kommentar posten</button>
+                    </form>
                 </div>
             </div>
         </div>

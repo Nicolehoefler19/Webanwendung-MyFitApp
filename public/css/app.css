@@ -11238,3 +11238,21 @@ h5 {
   overflow: hidden !important;
 }
 
+.user-container {
+  margin-top: 20px;
+}
+
+.table {
+  color: white !important;
+}
+
+.table tr:hover {
+  color: #006FFF !important;
+}
+
+.table_profilbilder {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+

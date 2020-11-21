@@ -49857,6 +49857,15 @@ $(document).ready(function () {
       }
     });
   });
+  $("#fitness_profile").click(function () {
+    $.ajax({
+      type: 'GET',
+      url: "/usertable",
+      success: function success(data) {
+        $(".user-container").html(data);
+      }
+    });
+  });
 });
 $(document).ready(function () {
   $(".merkliste-buttons").click(function () {
